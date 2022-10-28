@@ -1,6 +1,5 @@
 .img-profile {
     filter: grayscale(100%);
-    border-color: white;
     transition: filter 1s;
 }
 
@@ -8,6 +7,31 @@
     filter: none;
 }
 
+.navbar {
+    /* max-height: 80px; */
+    align-items: center;
+    align-content: center;
+}
+
+.navbar-nav .nav-link.active {
+    text-decoration: underline solid 0.15em;
+    text-decoration-color: #3a18d2;
+    text-underline-offset: 0.5em;
+    transition: text-decoration 1s ease-in-out;
+    transition: text-decoration-color 0.5s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline solid 0.15em;
+    text-decoration-color: #3a18d2;
+    text-underline-offset: 0.5rem;
+    transition: text-decoration 0.5s ease-out;
+    transition: text-decoration-color 0s;
+}
+
+.navbar-nav .social-links {
+    font-size: 1.5rem;
+}
 
 #intro {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),
@@ -16,8 +40,15 @@
         background-size: cover;
 }
 
-.lead {
+.hero-title {
+    font-family: var(--bs-body-font-family);
+    color: white;
+}
+
+.lead, p.lead {
     color: rgb(179, 179, 179);
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 #skills {
@@ -32,10 +63,54 @@
     background-color: #f7f7f7;
 }
 
+.card-body .btn:hover {
+    transform: none;
+    transition: color 0.5s ease-out;
+}
+
+.card-body a.nav-link:hover {
+    color:#3a18d2 !important;
+}
+
+.social-icon:hover {
+    background-color: #3a18d2 !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
 .whatsapp:hover, .github:hover, .linkedin:hover {
-    color: silver;
-    transform: translateY(-2.1rem);
-    transition: color 0.5s e;
+    color:#3a18d2e5;
+    transition: color 0.1s;
+}
+
+.whatsapp,
+.github,
+.linkedin {
+    color: var(--bs-body-color);
+    margin-right: 0.25rem;
+}
+
+div>h2>span {
+    text-decoration: underline #3a18d2;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 2px;
+}
+
+.btn {
+    border-radius: 2%;
+    background: none !important;
+    font-size: 0.7rem !important;
+    color: #3a18d2 !important;
+    border-color:#3a18d2 !important;
+}
+
+.btn:hover {
+    background-color: #3a18d2 !important;
+    color: white !important;
+    transform: translateY(-1.5px);
+    transition: background-color 0.25s;
+    transition: color 0.25s;
+    transition: transform 0.15s ease-out;
+    
 }
 
 /* body {
