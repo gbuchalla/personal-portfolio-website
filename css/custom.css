@@ -1,9 +1,15 @@
 .img-profile {
     filter: grayscale(100%);
     border-color: white;
+    transition: filter 1s;
 }
 
-#about {
+.img-profile:hover {
+    filter: none;
+}
+
+
+#intro {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),
             rgba(0, 0, 0, 0.85)), url("https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80");
         background-position: center;
@@ -20,6 +26,16 @@
 
 .album {
     background-color: #f7f7f7;
+}
+
+#contact {
+    background-color: #f7f7f7;
+}
+
+.whatsapp:hover, .github:hover, .linkedin:hover {
+    color: silver;
+    transform: translateY(-2.1rem);
+    transition: color 0.5s e;
 }
 
 /* body {
