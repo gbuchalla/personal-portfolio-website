@@ -33,6 +33,15 @@
     font-size: 1.5rem;
 }
 
+.navbar button:focus {
+    border-color:#3a18d2 !important;
+    border-width: 1px;
+}
+
+.navbar button:hover {
+    color:#3a18d2;
+}
+
 #intro {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),
             rgba(0, 0, 0, 0.85)), url("https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80");
@@ -70,6 +79,12 @@
 
 .card-body a.nav-link:hover {
     color:#3a18d2 !important;
+}
+
+form .subheading>span {
+    text-decoration: underline solid 2px;
+    text-decoration-color: #3a18d2;
+    text-underline-offset: 0.35em;
 }
 
 .social-icon:hover {
