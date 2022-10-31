@@ -1,3 +1,8 @@
+.resume-section {
+    padding-left: 0;
+    padding-top: 0;
+}
+
 .img-profile {
     filter: grayscale(100%);
     transition: filter 1s;
@@ -11,6 +16,10 @@
     /* max-height: 80px; */
     align-items: center;
     align-content: center;
+}
+
+.nav-item {
+    width: 100%;
 }
 
 .navbar-nav .nav-link.active {
@@ -87,6 +96,13 @@ form .subheading>span {
     text-underline-offset: 0.35em;
 }
 
+.info-box {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center; 
+    align-items: center;
+}
+
 .social-icon:hover {
     background-color: #3a18d2 !important;
     transition: background-color 0.3s ease-in-out;
@@ -116,6 +132,14 @@ div>h2>span {
     font-size: 0.7rem !important;
     color: #3a18d2 !important;
     border-color:#3a18d2 !important;
+}
+
+.btn#cv-link {
+    background-color: #3a18d2 !important;
+}
+
+.btn#cv-link:hover {
+    background-color: #3a18d2d2 !important;
 }
 
 .btn:hover {
