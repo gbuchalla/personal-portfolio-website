@@ -90,6 +90,10 @@
     color:#3a18d2 !important;
 }
 
+.modal-dialog {
+    min-width: 680px !important;
+}
+
 form .subheading>span {
     text-decoration: underline solid 2px;
     text-decoration-color: #3a18d2;
