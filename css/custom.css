@@ -81,6 +81,11 @@
     background-color: #f7f7f7;
 }
 
+.card {
+    min-width: 346px !important;
+    max-width: 420px;
+}
+
 .card-body .btn:hover {
     transform: none;
     transition: color 0.5s ease-out;
