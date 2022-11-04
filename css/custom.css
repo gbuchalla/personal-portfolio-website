@@ -99,6 +99,10 @@
     min-width: 680px !important;
 }
 
+.dev-icons img {
+    height: 65px;
+}
+
 form .subheading>span {
     text-decoration: underline solid 2px;
     text-decoration-color: #3a18d2;
