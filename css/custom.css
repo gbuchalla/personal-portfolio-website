@@ -99,8 +99,17 @@
     min-width: 680px !important;
 }
 
+.dev-icons div {
+    align-content: space-between;
+    row-gap: 30px;
+}
+
 .dev-icons img {
     height: 65px;
+}
+
+.dev-icons img[alt=python] {
+    height: 70px;
 }
 
 form .subheading>span {
