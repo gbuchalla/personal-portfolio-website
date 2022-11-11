@@ -118,6 +118,9 @@ html,body {
 .dev-icons div {
     align-content: space-between;
     row-gap: 30px;
+    column-gap: 15px;
+    justify-content: center;
+    max-width: 1000px;
 }
 
 .dev-icons img {
@@ -126,6 +129,24 @@ html,body {
 
 .dev-icons img[alt=python] {
     height: 70px;
+}
+
+@media screen and (max-width: 500px) {
+    .dev-icons div {
+        align-content: space-between;
+        row-gap: 30px;
+        column-gap: 0;
+        justify-content: space-evenly;
+        max-width: 1000px;
+    }
+
+    .dev-icons img {
+        height: 46px;
+    }
+
+    .dev-icons img[alt=python] {
+        height: 48px;
+    }
 }
 
 .fa-check {
