@@ -74,12 +74,8 @@ html,body {
     font-weight: 300;
 }
 
-#skills {
+#skills, #portfolio {
     background-color: #dfdfdf7e;
-}
-
-#portfolio {
-    background-color: #f7f7f7;
 }
 
 #education {

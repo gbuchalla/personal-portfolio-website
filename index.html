@@ -37,9 +37,9 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger mt-4 mt-lg-0" href="#intro">Intro</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfólio</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educação</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educação</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfólio</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contato</a></li>
                 <li class="nav-item social-links mt-2 mt-lg-4">
                     <a href="https://linkedin.com/in/guilherme-buchalla-ferreira" class="linkedin me-2" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
@@ -51,7 +51,7 @@
     </nav>
     <!-- Page Content-->
     <div class="container-fluid p-0">
-        <!-- About-->
+        <!-- Intro-->
         <section class="resume-section mw-100" id="intro">
             <div class="resume-section-content">
                 <h1 class="hero-title mb-4 text-center text-xl-start">
@@ -73,6 +73,89 @@
             </div>
         </section>
         <hr class="m-0" />  
+        <!-- Skills-->
+        <section class="resume-section text-black mw-100" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5"><span>Hab</span>ilidades</h2>
+                <div class="subheading text-primary mb-4 ">Principais tecnologias e linguagens de programação</div>
+                <div class="dev-icons text-secondary mb-5">
+                    <div class="d-flex flex-wrap mb-4">
+                        <img src="./assets/logos/python_horizontal.svg" alt="python">
+                        <img src="./assets/logos/javascript_horizontal.svg" alt="javascript">
+                        <img src="./assets/logos/html_vertical.png" alt="html">
+                        <img src="./assets/logos/css_vertical.svg" alt="css">
+                        <img src="./assets/logos/bootstrap_vertical.svg" alt="bootstrap">
+                        <img src="./assets/logos/node_horizontal.svg" alt="nodejs">
+                        <img src="./assets/logos/express_icon.svg" alt="express">
+                        <img src="./assets/logos/mongodb_horizontal.svg" alt="mongodb">
+                        <img src="./assets/logos/postgresql-vertical.svg" alt="postgresql">
+                        <img src="./assets/logos/react_rectangle.svg" alt="react">
+                        <img src="./assets/logos/mapbox_horizontal.svg" alt="mapbox">
+                        <img src="./assets/logos/git_horizontal.svg" alt="git">
+                        <img src="./assets/logos/npm_rectangle.svg" alt="npm">
+                    </div>
+                </div>
+                <div class="subheading mb-3 text-primary">Metodologias e Conceitos</div>
+                <ul class="fa-ul mb-4 text-secondary">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Design Responsivo
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Metodologias Ágeis
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Noções básicas de Clean Code e SOLID.
+                    </li>
+                </ul>
+                <div class="subheading mb-3 text-primary">Idiomas</div>
+                <ul class="fa-ul mb-0 text-secondary">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Inglês avançado
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Francês básico
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section mw-100 px-4 px-lg-5" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5"><span>For</span>mação Acadêmica</h2>
+                <div class="row flex-column justify-content-center mb-5 w-100">
+                    <div class="col-12 col-xxl-8 p-3 shadow-card">
+                        <h3>PUC Minas</h3>
+                        <div class="lead text-secondary mb-2">Especialização em Engenharia de Software</div>
+                        <span class="text-muted">(Início: Nov/2022)</span>
+                    </div>
+                    <div class="col-12 col-xxl-8 mt-4 align-middle pt-3 px-3 shadow-card">
+                        <h3>Universidade Federal de Itajubá</h3>
+                        <div class="lead mb-3 text-secondary">Bacharelado em Engenharia Mecânica</div>
+                    </div>
+                </div>
+                <h2 class="mb-5"><span>Cur</span>sos</h2>
+                <div class="row flex-column justify-content-evenly mb-5 py-3 px-2 shadow-card col-12 col-xxl-8">
+                    <div class="col-12">
+                        <div class="lead text-primary fw-bold d-inline">The Web Developer Bootcamp - </div>
+                        <span class="lead text-secondary">Udemy</span>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="lead text-primary fw-bold d-inline">Clean Code - </div><span class="lead text-secondary">Udemy</span>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="lead text-primary fw-bold d-inline">Introduction to Python Programming - </div>
+                        <span class="lead text-secondary">Udacity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
         <!-- Portfolio-->
         <section class="portfolio-section mw-100 py-5" id="portfolio">
             <div class="container-xxl mx-5">
@@ -183,104 +266,6 @@
                 </main>
         </section>
         <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section mw-100 px-4 px-lg-5" id="education">
-            <div class="resume-section-content">
-                <h2 class="mb-5"><span>Edu</span>cação</h2>
-                <div class="row flex-column justify-content-center mb-5 w-100">
-                    <div class="col-12 col-xxl-8 p-3 shadow-card">
-                        <h3>PUC Minas</h3>
-                        <div class="lead text-secondary mb-2">Especialização em Engenharia de Software</div>
-                        <span class="text-muted">(Início: Nov/2022)</span>
-                    </div>
-                    <div class="col-12 col-xxl-8 mt-4 align-middle pt-3 px-3 shadow-card">
-                        <h3>Universidade Federal de Itajubá</h3>
-                        <div class="lead mb-3 text-secondary">Bacharelado em Engenharia Mecânica</div>
-                    </div>
-                </div>
-                <h2 class="mb-5"><span>Cur</span>sos</h2>
-                <div class="row flex-column justify-content-evenly mb-5 py-3 px-2 shadow-card col-12 col-xxl-8">
-                    <div class="col-12">
-                        <div class="lead text-primary fw-bold d-inline">The Web Developer Bootcamp - </div>
-                        <span class="lead text-secondary">Udemy</span>
-                    </div>
-                    <div class="col-12 mt-3">
-                        <div class="lead text-primary fw-bold d-inline">Clean Code - </div><span class="lead text-secondary">Udemy</span>
-                    </div>
-                    <div class="col-12 mt-3">
-                        <div class="lead text-primary fw-bold d-inline">Introduction to Python Programming - </div>
-                        <span class="lead text-secondary">Udacity</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section text-black mw-100" id="skills">
-            <div class="resume-section-content">
-                <h2 class="mb-5"><span>Hab</span>ilidades</h2>
-                <div class="subheading text-primary mb-4 ">Principais tecnologias e linguagens de programação</div>
-                <div class="dev-icons text-secondary mb-5">
-                    <div class="d-flex flex-wrap mb-4">
-                        <img src="./assets/logos/python_horizontal.svg" alt="python">
-                        <img src="./assets/logos/javascript_horizontal.svg" alt="javascript">
-                        <img src="./assets/logos/html_vertical.png" alt="html">
-                        <img src="./assets/logos/css_vertical.svg" alt="css">
-                        <img src="./assets/logos/bootstrap_vertical.svg" alt="bootstrap">
-                        <img src="./assets/logos/node_horizontal.svg" alt="nodejs">
-                        <img src="./assets/logos/express_icon.svg" alt="express">
-                        <img src="./assets/logos/mongodb_horizontal.svg" alt="mongodb">
-                        <img src="./assets/logos/postgresql-vertical.svg" alt="postgresql">
-                        <img src="./assets/logos/react_rectangle.svg" alt="react">
-                        <img src="./assets/logos/mapbox_horizontal.svg" alt="mapbox">
-                        <img src="./assets/logos/git_horizontal.svg" alt="git">
-                        <img src="./assets/logos/npm_rectangle.svg" alt="npm">
-                    </div>
-                </div>
-                <div class="subheading mb-3 text-primary">Metodologias e Conceitos</div>
-                <ul class="fa-ul mb-4 text-secondary">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Design Responsivo
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Metodologias Ágeis
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Noções básicas de Clean Code e SOLID.
-                    </li>
-                </ul>
-                <div class="subheading mb-3 text-primary">Idiomas</div>
-                <ul class="fa-ul mb-0 text-secondary">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Inglês avançado
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Francês básico
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <hr class="m-0" />
-        
-        <!-- Interests-->
-        <!-- <section class="resume-section mw-100" id="interests">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Interests</h2>
-                <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid
-                    skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking,
-                    free climbing, and kayaking.</p>
-                <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television
-                    shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest
-                    technology advancements in the front-end web development world.</p>
-            </div>
-        </section> -->
-        <!-- <hr class="m-0" /> -->
-
         <!-- Contact-->
         <section class="resume-section mw-100" id="contact" >
             <div class="container-xl">
@@ -299,7 +284,7 @@
                     <div class="shadow bg-white w-100 py-2 mb-3">
                         <div class="info-box"> <i class="fa fa-envelope fs-3 align-middle" style="color: #3a18d2;"></i>
                             <span class="subheading align-middle">Email</span>
-                            <div class="text-break">guilhermebuchallaferreira@gmail.com</div>
+                            <div class="text-break text-center">guilhermebuchallaferreira@gmail.com</div>
                         </div>
                     </div>
                     <div class="shadow bg-white w-100  py-2">
