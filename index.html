@@ -146,6 +146,10 @@
                         <span class="lead text-secondary">Udemy</span>
                     </div>
                     <div class="col-12 mt-3">
+                        <div class="lead text-primary fw-bold d-inline">Git and Github - </div>
+                        <span class="lead text-secondary">DIO</span>
+                    </div>
+                    <div class="col-12 mt-3">
                         <div class="lead text-primary fw-bold d-inline">Clean Code - </div><span class="lead text-secondary">Udemy</span>
                     </div>
                     <div class="col-12 mt-3">
@@ -294,21 +298,36 @@
                         </div>
                     </div>
                 </div>
-                
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form bg-white w-100 mt-4 px-2 py-4 p-lg-5 shadow ">
-                    <div class="subheading mb-4 text-center text-lg-start"><span>Me envie uma mensagem</span>:</div>
-                    <div class="row">
-                        <div class="col-xxl-6 form-group"> <input type="text" name="name" class="form-control border border-2" id="name"
-                                placeholder="Nome" required=""></div>
-                        <div class="col-xxl-6 form-group mt-3 mt-xxl-0"> <input type="email" class="form-control border border-2" name="email"
-                                id="email" placeholder="Email" required=""></div>
+
+                <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+                <form action="https://formbold.com/s/9mEl9" method="POST" target="dummyframe" role="form" id="form" class="bg-white w-100 mt-4 px-2 py-4 p-lg-5 shadow ">
+                    <div class="subheading mb-4 text-center text-lg-start">
+                        <span>Me envie uma mensagem</span>:
                     </div>
-                    <div class="form-group mt-3"> <input type="text" class="form-control border border-2" name="subject" id="subject"
-                            placeholder="Assunto" required=""></div>
+                    <div class="row">
+                        <div class="col-xxl-6 form-group"> 
+                            <input type="text" name="name" class="form-control border border-2" id="name" placeholder="Nome" required>
+                        </div>
+                        <div class="col-xxl-6 form-group mt-3 mt-xxl-0"> 
+                            <input type="email" class="form-control border border-2" name="email" id="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3"> 
+                        <input type="text" class="form-control border border-2" name="subject" id="subject" placeholder="Assunto" required>
+                    </div>
                     <div class="form-group mt-3"><textarea class="form-control border border-2" name="message" rows="5" placeholder="Mensagem"
-                            required=""></textarea></div>
-                    <div class="text-center mt-3"><button type="submit" class="btn btn-outline-info py-2" style="border-color:#3a18d2">Enviar Mensagem</button></div>
+                            required></textarea></div>
+                    <div class="text-center mt-3">
+                        <button type="submit" onclick="setTimeout(() => document.getElementById('form').reset(), 500);"
+                            class="btn btn-outline-info py-2" style="border-color:#3a18d2">
+                            Enviar Mensagem
+                        </button>
+                    </div>
                 </form>
+                <!-- <script>
+                    const form = document.getElementById("form");
+                    form.addEventListener('submit', () => form.reset());
+                </script> -->
             </div>
         </section>
 
