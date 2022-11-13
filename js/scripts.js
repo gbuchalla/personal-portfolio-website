@@ -32,3 +32,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// Resets form after submission
+const form = document.getElementById("form");
+form.addEventListener('submit', () => setTimeout(() => form.reset(), 500));
