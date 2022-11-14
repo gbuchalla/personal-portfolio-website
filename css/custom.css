@@ -16,6 +16,30 @@ html,body {
     filter: none;
 }
 
+@media (max-width:992px) {
+    .img-profile {
+        height: 132px;
+        width: 132px;
+    }
+    div.profile-container {
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width:576px) {
+    div.profile-container {
+        padding-right: 2.5rem;
+    }
+}
+
+@media (max-width:400px) {
+    div.profile-container {
+        text-align: start !important;
+        padding-right: 0 !important;
+        padding-left: 0.5rem;
+    }
+}
+
 .navbar {
     /* max-height: 80px; */
     max-width: 100vw;
@@ -43,7 +67,7 @@ html,body {
     transition: text-decoration-color 0s;
 }
 
-.navbar-nav .social-links {
+.navbar .social-links {
     font-size: 1.5rem;
 }
 
@@ -105,7 +129,7 @@ html,body {
     color:#3a18d2 !important;
 }
 
-@media screen and (max-width:992px) {
+@media (max-width:992px) {
     .modal-dialog {
             min-width: 90vw;
     }
@@ -127,7 +151,7 @@ html,body {
     height: 70px;
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .dev-icons div {
         align-content: space-between;
         row-gap: 30px;
