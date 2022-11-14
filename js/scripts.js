@@ -34,5 +34,9 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 // Resets form after submission
-const form = document.getElementById("form");
-form.addEventListener('submit', () => setTimeout(() => form.reset(), 500));
+document.getElementById("form-btn").addEventListener("click", async (evt) => {
+    const form = document.getElementById("form");
+    await form.submit();
+    form.reset();
+});
+
