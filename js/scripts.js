@@ -33,10 +33,13 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-// Resets form after submission
+// Reset form after submission
 document.getElementById("form-btn").addEventListener("click", async (evt) => {
     const form = document.getElementById("form");
     await form.submit();
     form.reset();
 });
 
+// Activate Bootstrap tooltips 
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
