@@ -48,8 +48,10 @@ html,body {
     .social-icons div:first-of-type {
         margin-bottom: 2.5rem !important;
     }
+    .subheading {
+        font-size: 1.3rem;
+    }
 }
-
 
 .navbar {
     /* max-height: 80px; */
