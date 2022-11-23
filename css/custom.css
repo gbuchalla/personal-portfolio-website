@@ -33,12 +33,23 @@ html,body {
 }
 
 @media (max-width:410px) {
+    section.resume-section {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
     div.profile-container {
         text-align: start !important;
         padding-right: 0 !important;
         padding-left: 0.5rem;
     }
+    .social-icons .social-icon {
+        margin-right: 0.90rem;
+    }
+    .social-icons div:first-of-type {
+        margin-bottom: 2.5rem !important;
+    }
 }
+
 
 .navbar {
     /* max-height: 80px; */
