@@ -2,9 +2,38 @@ html,body {
     overflow-x: hidden; 
 }
 
-.resume-section {
-    padding-left: 0;
-    padding-top: 0;
+section.resume-section {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 75rem;
+}
+
+.portfolio-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+section.resume-section .resume-section-content {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    section.resume-section, .portfolio-section {
+        min-height: 100vh;
+    }
+}
+
+@media (min-width: 992px) {
+    section.resume-section, .portfolio-section {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
 }
 
 .img-profile {
@@ -24,6 +53,9 @@ html,body {
     div.profile-container {
         padding-right: 3rem;
     }
+    .navbar {
+        --bs-navbar-padding-y: 0.75rem !important;
+    }
 }
 
 @media (max-width:576px) {
@@ -33,7 +65,7 @@ html,body {
 }
 
 @media (max-width:410px) {
-    section.resume-section {
+    section.resume-section, .portfolio-section {
         padding-top: 4rem;
         padding-bottom: 3rem;
     }
@@ -319,6 +351,7 @@ div>h2>span {
         padding-left: 17rem;
     }
 }
+
 /* @media (min-width: 992px) {
     #sideNav {
         margin-left: -17rem;
