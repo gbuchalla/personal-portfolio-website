@@ -134,6 +134,20 @@ section.resume-section .resume-section-content {
     color:#3a18d2 !important;
 }
 
+.modal-footer {
+    height: 60px;
+    align-content: center;
+}
+
+.modal-footer .btn {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.modal-footer .btn:hover {
+    transition: none;
+}
+
 @media (max-width:992px) {
     .modal-dialog {
             min-width: 90vw;
@@ -317,13 +331,23 @@ div>h2>span {
         height: 132px;
         width: 132px;
     }
-
     div.profile-container {
         padding-right: 3rem;
     }
-
     .navbar {
         --bs-navbar-padding-y: 0.75rem !important;
+    }
+}
+
+@media (max-width:768px) {
+    .modal-header {
+        --bs-modal-header-padding: 0.6rem 1rem
+    }
+    .modal-footer {
+        height: 50px;
+    }
+    .modal-footer .btn {
+        padding: 5px 20px;
     }
 }
 
@@ -368,7 +392,7 @@ div>h2>span {
     .card-body {
         --bs-card-spacer-x: 0.5rem;
     }
-    .card button {
+    .card .card-btn {
         width:75% !important;
         font-size: 0.65rem !important;
         --bs-btn-padding-x: 0.1rem;
