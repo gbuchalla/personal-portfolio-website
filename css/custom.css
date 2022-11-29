@@ -355,6 +355,11 @@ div>h2>span {
     div.profile-container {
         padding-right: 2.5rem;
     }
+    section.resume-section {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
     #contact{
         padding-right: 0;
         padding-left: 0;
