@@ -148,12 +148,6 @@ section.resume-section .resume-section-content {
     transition: none;
 }
 
-@media (max-width:992px) {
-    .modal-dialog {
-            min-width: 90vw;
-    }
-}
-
 .dev-icons div {
     align-content: space-between;
     row-gap: 30px;
@@ -337,9 +331,15 @@ div>h2>span {
     .navbar {
         --bs-navbar-padding-y: 0.75rem !important;
     }
+    .modal-dialog {
+            min-width: 93vw;
+    }
 }
 
 @media (max-width:768px) {
+    .modal-dialog {
+            min-width: 97vw;
+        }
     .modal-header {
         --bs-modal-header-padding: 0.6rem 1rem
     }
@@ -359,7 +359,12 @@ div>h2>span {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
-
+    .modal-dialog {
+        --bs-modal-margin: 0.5rem 0.1rem;
+    }
+    .modal-body{
+        --bs-modal-padding: 0.5rem 0.3rem;
+    }
     #contact{
         padding-right: 0;
         padding-left: 0;
