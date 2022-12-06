@@ -317,10 +317,12 @@
                     <div class="form-group mt-3"><textarea class="form-control border border-2" name="message" rows="5" placeholder="Mensagem"
                             required></textarea></div>
                     <div class="text-center mt-3">
-                        <div class="alert alert-dismissible alert-success mt-3 text-center">
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                            <span class="fw-bold d-block d-md-inline d-lg-block d-xl-inline">Mensagem enviada com sucesso!</span> Entrarei em
-                            contato quanto antes.
+                        <div id="submit-alert" class="d-none">
+                            <div class="alert alert-dismissible alert-success mt-3 text-center">
+                                <button type="button" class="btn-close" id="close-alert-btn"></button>
+                                <span class="fw-bold d-block d-md-inline d-lg-block d-xl-inline">Mensagem enviada com sucesso!</span> Entrarei em
+                                contato quanto antes.
+                            </div>
                         </div>
                         <button type="button" class="btn btn-outline-info py-2" id="form-btn" style="border-color:#3a18d2">
                             Enviar Mensagem

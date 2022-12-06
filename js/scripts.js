@@ -1,11 +1,3 @@
-/*!
-* Start Bootstrap - Resume v7.0.5 (https://startbootstrap.com/theme/resume)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -33,12 +25,24 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+
 // Reset form after submission
-document.getElementById("form-btn").addEventListener("click", async (evt) => {
+document.getElementById("form-btn").addEventListener("click", async () => {
     const form = document.getElementById("form");
     await form.submit();
-    form.reset();
+    await form.reset();
+    
+    // Show submission success message after submiting the form
+    const submitAlert = document.getElementById("submit-alert");
+    submitAlert.className = "d-block";
 });
+
+// Hide submission message when clicking its close button
+document.getElementById("close-alert-btn").addEventListener("click", () => {
+    const submitAlert = document.getElementById("submit-alert");
+    submitAlert.className = "d-none";
+});
+
 
 // Activate Bootstrap tooltips 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
