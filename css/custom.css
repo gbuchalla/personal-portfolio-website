@@ -327,10 +327,13 @@ div>h2>span {
     }
 }
 
+/* Overall responsiveness */
+
 @media (max-width:992px) {
     .img-profile {
         height: 132px;
         width: 132px;
+        filter:none;
     }
 
     div.profile-container {
@@ -370,8 +373,8 @@ div>h2>span {
     }
 
     section.resume-section {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
     }
 
     .modal-dialog {
@@ -400,7 +403,7 @@ div>h2>span {
 
     section.resume-section,
     .portfolio-section {
-        padding-top: 4rem;
+        padding-top: 5rem;
         padding-bottom: 3rem;
     }
 
@@ -408,6 +411,10 @@ div>h2>span {
         text-align: start !important;
         padding-right: 0 !important;
         padding-left: 0.5rem;
+    }
+
+    .profile-container .social-links {
+        margin-left: 16px;
     }
 
     .social-icons .social-icon {
@@ -445,10 +452,6 @@ div>h2>span {
     .card-text {
         margin-bottom: 0.4rem;
         font-size: 0.95rem;
-    }
-
-    #contact .container-xl {
-        --bs-gutter-x: 0.8rem;
     }
 
     #email-domain {
