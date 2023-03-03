@@ -80,13 +80,22 @@ section.resume-section .resume-section-content {
     font-size: 1.5rem;
 }
 
-.navbar button:focus {
-    border-color: #3a18d2 !important;
-    border-width: 1px;
+.navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 2px;
+    color: #3a18d2;
 }
 
-.navbar button:hover {
+.navbar .navbar-toggler:hover {
+    box-shadow: 0 0 0 2px;
     color: #3a18d2;
+}
+
+.navbar .navbar-toggler.collapsed {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler.collapsed:focus {
+    box-shadow: none;
 }
 
 #intro {
@@ -270,10 +279,6 @@ div>h2>span {
     text-transform: uppercase;
 }
 
-#sideNav .navbar-toggler:focus {
-    outline-color: #d48a6e;
-}
-
 @media (min-width: 992px) {
     body {
         padding-top: 0;
@@ -347,8 +352,13 @@ div>h2>span {
     .modal-dialog {
         min-width: 93vw;
     }
-}
 
+    .portfolio-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+    
 @media (max-width:768px) {
     .modal-dialog {
         min-width: 97vw;
@@ -369,7 +379,7 @@ div>h2>span {
 
 @media (max-width:576px) {
 
-    section.resume-section {
+    .resume-section, portfolio-section {
         padding-right: 0.75rem;
         padding-left: 0.75rem;
     }
@@ -380,15 +390,6 @@ div>h2>span {
 
     .modal-body {
         --bs-modal-padding: 0.5rem 0.3rem;
-    }
-
-    #contact {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    #contact .container-xl {
-        --bs-gutter-x: 1.5rem;
     }
 
     .form-control {
