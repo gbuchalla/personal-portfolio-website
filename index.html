@@ -23,13 +23,16 @@
         aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand js-scroll-trigger me-1 me-sm-3" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger col-8 col-sm-6 text-end me-0" href="#page-top">
             <span class="d-block d-lg-none">Guilherme B.</span>
         </a>
         <div class="navbar-collapse row justify-content-between justify-content-lg-center flex-row-reverse collapse" id="navbarResponsive">
-            <div class="col-6 profile-container d-lg-block text-end m-lg-0 mb-lg-5">
-                <img class="img-fluid img-profile rounded-circle border border-1 border-primary mx-auto mb-2" src="assets/img/profile.jpg" alt="foto de perfil">
-                <div class="nav-item social-links mt-2">
+            <div class="profile-container col-6 d-lg-block text-end ps-0 pe-lg-0 m-0 mb-lg-5">
+                <div>
+                    <img class="img-fluid img-profile rounded-circle border border-1 border-primary 
+                        mx-auto mb-2" src="assets/img/profile.jpg" alt="foto de perfil">
+                </div>
+                <div class="nav-item social-links text-lg-center mt-2 mx-0">
                     <a href="https://linkedin.com/in/guilherme-buchalla-ferreira" class="linkedin me-2" target="_blank" 
                     rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/gbuchalla" class="github me-2" target="_blank" 
@@ -88,7 +91,7 @@
                         <img src="./assets/logos/css_vertical.svg" alt="css" data-bs-toggle="tooltip" data-bs-original-title="CSS">
                         <img src="./assets/logos/bootstrap_vertical.svg" alt="bootstrap" data-bs-toggle="tooltip" data-bs-original-title="Bootstrap">
                         <img src="./assets/logos/node_horizontal.svg" alt="nodejs" data-bs-toggle="tooltip" data-bs-original-title="NodeJS">
-                        <img src="./assets/logos/express_icon.svg" alt="express" data-bs-toggle="tooltip" data-bs-original-title="Express">
+                        <img src="./assets/logos/express_icon.svg" alt="express" data-bs-toggle="tooltip" data-bs-original-title="Express.js">
                         <img src="./assets/logos/mongodb_horizontal.svg" alt="mongodb" data-bs-toggle="tooltip" data-bs-original-title="MongoDB">
                         <img src="./assets/logos/postgresql-vertical.svg" alt="postgresql" data-bs-toggle="tooltip" data-bs-original-title="PostgreSQL">
                         <img src="./assets/logos/react_rectangle.svg" alt="react" data-bs-toggle="tooltip" data-bs-original-title="React">
@@ -96,7 +99,9 @@
                         <img src="./assets/logos/git_horizontal.svg" alt="git" data-bs-toggle="tooltip" data-bs-original-title="Git e Github">
                         <img src="./assets/logos/npm_rectangle.svg" alt="npm" data-bs-toggle="tooltip" data-bs-original-title="NPM">
                     </div>
+                    <div class="text-secondary fs-6 text-center">*Clique ou passe o mouse nos logotipos para descrição</div>
                 </div>
+                
                 <div class="subheading mb-3 text-primary text-center text-md-start">Metodologias e Conceitos</div>
                 <ul class="fa-ul mb-4 text-secondary">
                     <li>
@@ -105,11 +110,15 @@
                     </li>
                     <li>
                         <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Testes Unitário e de Integração
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
                         Metodologias Ágeis
                     </li>
                     <li>
                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Noções básicas de Clean Code e SOLID.
+                        Noções básicas de Clean Code.
                     </li>
                 </ul>
                 <div class="subheading mb-3 text-primary text-center text-md-start">Idiomas</div>
@@ -130,9 +139,16 @@
             <div class="resume-section-content">
                 <h2 class="mb-4"><span>For</span>mação Acadêmica</h2>
                 <div class="row flex-column justify-content-center mb-5 mw-100 mx-auto text-center text-xxl-start">
-                    <div class="col-12 col-md-10 col-lg-12 col-xl-10 col-xxl-8 mt-4 mx-md-auto mx-xxl-0 align-middle pt-3 px-2 p-sm-3 shadow-card">
+                    <div class="col-12 col-md-10 col-lg-12 col-xl-10 col-xxl-8 mt-4 mx-md-auto mx-xxl-0 align-middle 
+                        py-3 px-2 p-sm-3 shadow-card">
+                        <h3>PUC Minas</h3>
+                        <div class="lead text-secondary mb-2">Especialização em Engenharia de Software</div>
+                        <span class="text-muted">(Início: Março/2023)</span>
+                    </div>
+                    <div class="col-12 col-md-10 col-lg-12 col-xl-10 col-xxl-8 mt-4 mx-md-auto mx-xxl-0 align-middle 
+                        py-3 px-2 p-sm-3 shadow-card">
                         <h3>Universidade Federal de Itajubá</h3>
-                        <div class="lead mb-3 text-secondary">Bacharelado em Engenharia Mecânica</div>
+                        <div class="lead text-secondary">Bacharelado em Engenharia Mecânica</div>
                     </div>
                 </div>
                 <h2 class="mb-5"><span>Cur</span>sos</h2>
@@ -158,9 +174,9 @@
         </section>
         <hr class="m-0" />
         <section class="portfolio-section mw-100" id="portfolio">
-            <div class="container-xxl">
+            <div class="container-xxl px-0">
                 <div class="row py-lg-3">
-                    <div class="col-11">
+                    <div class="col-12">
                         <h2 class="mb-5"><span>Por</span>tfólio</h2>
                         <p class="lead text-secondary text-center text-xl-start">
                             Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, 
@@ -172,7 +188,7 @@
             <div class="album pb-4 pt-5 pt-lg-4">
                 <div class="container">
                     <div class="row flex-column flex-xl-row justify-content-around align-items-center ">
-                        <div class="col-11 col-md-8 col-xl-6 col-xxl-5">
+                        <div class="col-12 col-md-8 col-xl-6 col-xxl-5 px-0">
                             <div class="card shadow mb-5 mb-xl-0 mx-auto">
                                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
@@ -221,7 +237,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-11 col-md-8 col-xl-6 col-xxl-5">
+                        <div class="col-12 col-md-8 col-xl-6 col-xxl-5 px-0">
                             <div class="card shadow mx-auto">
                                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
                                     role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -270,7 +286,7 @@
         </section>
         <hr class="m-0" />
         <section class="resume-section mw-100" id="contact" >
-            <div class="container-xl">
+            <div class="container-xl px-0">
                 <h2 class="mb-5"><span>Con</span>tato</h2>    
                 <div class="row flex-column justify-content-evenly align-items-center w-100 mt-2 mx-auto">
                     <div class="shadow bg-white w-100 py-2 mb-3" >

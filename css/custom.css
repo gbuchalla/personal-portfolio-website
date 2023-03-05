@@ -77,16 +77,25 @@ section.resume-section .resume-section-content {
 }
 
 .navbar .social-links {
-    font-size: 1.5rem;
+    font-size: 30px;
 }
 
-.navbar button:focus {
-    border-color: #3a18d2 !important;
-    border-width: 1px;
-}
-
-.navbar button:hover {
+.navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 2px;
     color: #3a18d2;
+}
+
+.navbar .navbar-toggler:hover {
+    box-shadow: 0 0 0 2px;
+    color: #3a18d2;
+}
+
+.navbar .navbar-toggler.collapsed {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler.collapsed:focus {
+    box-shadow: none;
 }
 
 #intro {
@@ -270,10 +279,6 @@ div>h2>span {
     text-transform: uppercase;
 }
 
-#sideNav .navbar-toggler:focus {
-    outline-color: #d48a6e;
-}
-
 @media (min-width: 992px) {
     body {
         padding-top: 0;
@@ -327,14 +332,21 @@ div>h2>span {
     }
 }
 
+/* Overall responsiveness */
+
 @media (max-width:992px) {
     .img-profile {
         height: 132px;
         width: 132px;
+        filter:none;
+    }
+
+    .navbar .social-links {
+    padding-right: 4px;
     }
 
     div.profile-container {
-        padding-right: 3rem;
+        padding-right: 40px;
     }
 
     .navbar {
@@ -344,8 +356,13 @@ div>h2>span {
     .modal-dialog {
         min-width: 93vw;
     }
-}
 
+    .portfolio-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+    
 @media (max-width:768px) {
     .modal-dialog {
         min-width: 97vw;
@@ -365,13 +382,10 @@ div>h2>span {
 }
 
 @media (max-width:576px) {
-    div.profile-container {
-        padding-right: 2.5rem;
-    }
 
-    section.resume-section {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
+    .resume-section, portfolio-section {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
     }
 
     .modal-dialog {
@@ -380,15 +394,6 @@ div>h2>span {
 
     .modal-body {
         --bs-modal-padding: 0.5rem 0.3rem;
-    }
-
-    #contact {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    #contact .container-xl {
-        --bs-gutter-x: 1.5rem;
     }
 
     .form-control {
@@ -400,14 +405,25 @@ div>h2>span {
 
     section.resume-section,
     .portfolio-section {
-        padding-top: 4rem;
+        padding-top: 5rem;
         padding-bottom: 3rem;
     }
 
+    #sideNav {
+    padding-left: 12px;
+    padding-right: 12px;
+    }
+
+    .navbar-brand span {
+        font-size: 23px;
+    }
+
     div.profile-container {
-        text-align: start !important;
-        padding-right: 0 !important;
-        padding-left: 0.5rem;
+        padding-right: 35px;
+    }
+
+    .profile-container .social-links {
+        margin-left: 16px;
     }
 
     .social-icons .social-icon {
@@ -445,10 +461,6 @@ div>h2>span {
     .card-text {
         margin-bottom: 0.4rem;
         font-size: 0.95rem;
-    }
-
-    #contact .container-xl {
-        --bs-gutter-x: 0.8rem;
     }
 
     #email-domain {
