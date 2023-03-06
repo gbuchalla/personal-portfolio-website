@@ -41,6 +41,10 @@ section.resume-section .resume-section-content {
     }
 }
 
+.profile-container {
+    width: 53% !important;
+}
+
 .img-profile {
     filter: grayscale(100%);
     transition: filter 1s;
@@ -111,10 +115,27 @@ section.resume-section .resume-section-content {
     color: white;
 }
 
+.hero-subtitle {
+    font-family: var(--bs-body-font-family);
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    text-transform: none;
+    color: rgb(179, 179, 179);
+    line-height: 45px;
+}
+
+.hero-subtitle span {
+    /* color: white; */
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline #3a18d2;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 2px;
+}
+
 .lead,
 p.lead {
     color: rgb(179, 179, 179);
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
@@ -148,6 +169,24 @@ p.lead {
 
 .card-body a.nav-link:hover {
     color: #3a18d2 !important;
+}
+
+.modal-dialog {
+    opacity: 0.94;
+}
+
+.modal-header {
+    background-color: rgba(0, 0, 0, 0.99);
+    color: white;
+}
+
+.modal-title {
+    text-align: start;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: var(--bs-body-font-family);
+    text-transform: none;
+
 }
 
 .modal-footer {
@@ -213,6 +252,14 @@ form .subheading>span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.info-box.email a {
+    text-decoration: none;
+}
+
+.info-box.email a:hover {
+    text-decoration:#3a18d2 underline;
 }
 
 .social-icon:hover {
@@ -335,9 +382,13 @@ div>h2>span {
 /* Overall responsiveness */
 
 @media (max-width:992px) {
+    .profile-container {
+        width: 50% !important;
+    }
+    
     .img-profile {
         height: 132px;
-        width: 132px;
+        width: 137px;
         filter:none;
     }
 
@@ -401,6 +452,33 @@ div>h2>span {
     }
 }
 
+@media (max-width:450px) {
+
+    .modal-header {
+    flex-direction: column;
+    }
+    
+    .modal-header > div,
+    .modal-header > h5 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .modal-header > div {
+        justify-content: space-around !important;
+    }
+
+    .modal-header .nav-link {
+        font-size: 18px;
+        margin-top: 6px;
+    }
+
+    .modal-title {
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
 @media (max-width:410px) {
 
     section.resume-section,
@@ -432,6 +510,14 @@ div>h2>span {
 
     .social-icons div:first-of-type {
         margin-bottom: 2.5rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 22px;
+    }
+
+    .hero-subtitle span {
+    line-height: 40px;
     }
 
     .subheading {
