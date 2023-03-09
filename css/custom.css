@@ -125,8 +125,8 @@ section.resume-section .resume-section-content {
 }
 
 .hero-subtitle span {
-    /* color: white; */
-    color: rgba(255, 255, 255, 0.9);
+    /* color: rgba(255, 255, 255, 0.9); */
+    color: rgb(179, 179, 179);
     text-decoration: underline #3a18d2;
     text-underline-offset: 0.5rem;
     text-decoration-thickness: 2px;
@@ -172,7 +172,7 @@ p.lead {
 }
 
 .modal-dialog {
-    opacity: 0.94;
+    opacity: 0.97;
 }
 
 .modal-header {
@@ -201,6 +201,11 @@ p.lead {
 
 .modal-footer .btn:hover {
     transition: none;
+}
+
+.carousel .carousel-control-next-icon,
+.carousel .carousel-control-prev-icon {
+        filter: brightness(0.5) drop-shadow(2px 4px 10px black);
 }
 
 .dev-icons div {
@@ -377,6 +382,16 @@ div>h2>span {
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
         display: block;
     }
+
+    .modal-dialog {
+        min-width: 93vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal-dialog {
+        min-width: 88vw;
+    }
 }
 
 /* Overall responsiveness */
@@ -405,7 +420,7 @@ div>h2>span {
     }
 
     .modal-dialog {
-        min-width: 93vw;
+        min-width: 95vw;
     }
 
     .portfolio-section {
