@@ -224,6 +224,10 @@ p.lead {
     height: 70px;
 }
 
+.dev-icons img[alt=github] {
+    height: 60px;
+}
+
 @media (max-width: 500px) {
     .dev-icons div {
         align-content: space-between;
@@ -240,6 +244,10 @@ p.lead {
     .dev-icons img[alt=python] {
         height: 48px;
     }
+
+    .dev-icons img[alt=github] {
+    height: 44px;
+}
 }
 
 .fa-check {
