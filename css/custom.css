@@ -396,11 +396,13 @@ div>h2>span {
     }
 }
 
+
 @media (min-width: 1200px) {
     .modal-dialog {
         min-width: 88vw;
     }
 }
+
 
 /* Overall responsiveness */
 
