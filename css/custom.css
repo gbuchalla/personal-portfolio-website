@@ -210,6 +210,7 @@ p.lead {
 
 .dev-icons div {
     align-content: space-between;
+    align-items: center;
     row-gap: 30px;
     column-gap: 15px;
     justify-content: center;
@@ -222,6 +223,13 @@ p.lead {
 
 .dev-icons img[alt=python] {
     height: 70px;
+}
+.dev-icons img[alt=laravel] {
+    height: 75px;
+}
+
+.dev-icons img[alt=php] {
+    height: 55px;
 }
 
 .dev-icons img[alt=github] {
