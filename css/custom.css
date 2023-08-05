@@ -121,7 +121,7 @@ section.resume-section .resume-section-content {
     letter-spacing: 2px;
     text-transform: none;
     color: rgb(179, 179, 179);
-    line-height: 45px;
+    line-height: 35px;
 }
 
 .hero-subtitle span {
@@ -281,6 +281,13 @@ form .subheading>span {
 
 .info-box.email a:hover {
     text-decoration:#3a18d2 underline;
+}
+
+.social-icons .social-icon {
+    margin-right: 0.90rem;
+    font-size: 1.25rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .social-icon:hover {
@@ -535,20 +542,38 @@ div>h2>span {
         margin-left: 16px;
     }
 
-    .social-icons .social-icon {
-        margin-right: 0.90rem;
-    }
-
-    .social-icons div:first-of-type {
-        margin-bottom: 2.5rem !important;
+    .hero-title {
+        font-size: 1.4rem;
     }
 
     .hero-subtitle {
-        font-size: 22px;
+        font-size: 1rem;
     }
 
     .hero-subtitle span {
-    line-height: 40px;
+    line-height: 20px;
+    }
+
+    .social-icons.mt-5 {
+        margin-top: 2rem !important;
+    }
+
+    .social-icons .social-icon {
+        margin-right: 0.90rem;
+        font-size: 1.15rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .social-icons div:first-of-type {
+        margin-bottom: 1rem !important;
+    }
+
+    .btn#cv-link {
+        --bs-btn-padding-y: 0.5rem;
+        --bs-btn-padding-x: 1rem;
+        --bs-btn-font-size: 0.875rem;
+        --bs-btn-border-radius: 0.25rem;
     }
 
     .subheading {
