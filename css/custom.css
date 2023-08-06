@@ -253,6 +253,14 @@ p.lead {
         height: 48px;
     }
 
+    .dev-icons img[alt=laravel] {
+        height: 50px;
+    }
+
+    .dev-icons img[alt=php] {
+        height: 42px;
+    }
+
     .dev-icons img[alt=github] {
     height: 44px;
 }
@@ -417,6 +425,20 @@ div>h2>span {
     }
 }
 
+@media (min-width: 1400px) {
+    .modal-dialog {
+        min-width: 88vw;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
 /* Overall responsiveness */
 
 @media (max-width:992px) {
@@ -427,7 +449,6 @@ div>h2>span {
     .img-profile {
         height: 132px;
         width: 137px;
-        filter:none;
     }
 
     .navbar .social-links {
@@ -525,6 +546,11 @@ div>h2>span {
         padding-bottom: 3rem;
     }
 
+    #intro {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
     #sideNav {
     padding-left: 12px;
     padding-right: 12px;
@@ -547,7 +573,7 @@ div>h2>span {
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .hero-subtitle span {
